@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<!-- Debugging information -->
+<pre>{{{json this}}}</pre>
+
+<div class='row'>
+  {{#each recipes}}
+    <div class='col-md-4'>
+      <div class='card mb-4 shadow-sm'>
+        <div class='card-body'>
+          <h5 class='card-title'>{{this.title}}</h5>
+          <p class='card-text'>{{this.description}}</p>
+          <a href='#' class='btn btn-primary'>View Recipe</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
